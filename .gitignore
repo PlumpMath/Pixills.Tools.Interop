@@ -1,0 +1,14 @@
+_ReSharper.Pixills.Tools.Interop
+*.suo
+*.user
+*.ncrunchsolution
+*.sdf
+*.user
+obj
+bin
+Debug
+Relase
+/ipch
+/TestResults
+packages
+

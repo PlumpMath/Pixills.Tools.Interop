@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECB7E419-DB37-40BA-AED0-D60126325B4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pixills.Interop</RootNamespace>
+    <AssemblyName>Pixills.Interop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Networking\Ip.cs" />
+    <Compile Include="Networking\IpAddressRow.cs" />
+    <Compile Include="Networking\IPAddress.cs" />
+    <Compile Include="Networking\IPAdressTable.cs" />
+    <Compile Include="Networking\IpNetRow.cs" />
+    <Compile Include="Networking\IpNetTable.cs" />
+    <Compile Include="Networking\IPNETTYPE .cs" />
+    <Compile Include="Networking\Marshallable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Networking\OVERLAPPED .cs" />
+    <Compile Include="Types\ERROR.cs" />
+    <Compile Include="Networking\IpForwardRow.cs" />
+    <Compile Include="Networking\IpForwardTable.cs" />
+    <Compile Include="Networking\IPHLPAPI.cs" />
+    <Compile Include="Networking\PROTOCOL.cs" />
+    <Compile Include="Networking\IPFORWARDTYPE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\Functions\Functions.cs" />
+    <Compile Include="Windows\Types\ExtendedWindowStyles.cs" />
+    <Compile Include="Windows\Types\Rect.cs" />
+    <Compile Include="Windows\Types\WindowInfo.cs" />
+    <Compile Include="Windows\Types\WindowStyles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Processes\Functions\" />
+    <Folder Include="Processes\Types\" />
+    <Folder Include="Processes\Wrappers\" />
+    <Folder Include="Windows\Wrappers\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
